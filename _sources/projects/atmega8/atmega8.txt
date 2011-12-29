@@ -26,6 +26,8 @@ board pin  AVR pin  Arduino pin comment
 7         NC
 8         POWER
 9         GND
+*
+*
 10        PC0       A0      
 11        PC1       A1
 12        PC2       A2
@@ -36,6 +38,8 @@ board pin  AVR pin  Arduino pin comment
 17        NC
 18        POWER
 19        GND
+*
+*
 20        PD0       D0          RxD
 21        PD1       D1          TxD
 22        PD2       D2
