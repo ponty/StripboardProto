@@ -8,6 +8,9 @@ Links:
 
 Features:
  - designed for hobby projects
+ - stripboard_ based
+ - no drilling
+ - no etching
  - modular 
  - the bus consists of 8 bit ports
  - passive backplane_ holds the modules
