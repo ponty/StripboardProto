@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>8. RS232 adapter &mdash; StripboardProto 0.0.0 documentation</title>
+    <title>10. Arduino tvout adapter &mdash; StripboardProto 0.0.0 documentation</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -26,8 +26,8 @@
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="StripboardProto 0.0.0 documentation" href="../../index.html" />
-    <link rel="next" title="9. Electronic component tester" href="../tester/tester.html" />
-    <link rel="prev" title="7. r2r_ladder_dac" href="../r2r_ladder_dac/r2r_ladder_dac.html" /> 
+    <link rel="next" title="11. V-USB Adapter" href="../vusb/vusb.html" />
+    <link rel="prev" title="9. Electronic component tester" href="../tester/tester.html" /> 
   </head>
   <body>
     <div class="related">
@@ -37,10 +37,10 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="../tester/tester.html" title="9. Electronic component tester"
+          <a href="../vusb/vusb.html" title="11. V-USB Adapter"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../r2r_ladder_dac/r2r_ladder_dac.html" title="7. r2r_ladder_dac"
+          <a href="../tester/tester.html" title="9. Electronic component tester"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">StripboardProto 0.0.0 documentation</a> &raquo;</li> 
       </ul>
@@ -51,68 +51,63 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="rs232-adapter">
-<h1>8. RS232 adapter<a class="headerlink" href="#rs232-adapter" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="arduino-tvout-adapter">
+<h1>10. Arduino tvout adapter<a class="headerlink" href="#arduino-tvout-adapter" title="Permalink to this headline">¶</a></h1>
 <p>Status: OK</p>
-<dl class="docutils">
-<dt>features:</dt>
-<dd><ul class="first last simple">
-<li>Jumper pins can be used for default Arduino ports.</li>
-<li>FTDI pinout for RS232 connector</li>
-</ul>
-</dd>
-</dl>
+<p>Arduino <a class="reference external" href="http://code.google.com/p/arduino-tvout/">tvout</a> library interface</p>
+<p>features:</p>
 <div class="section" id="pins">
-<h2>8.1. pins<a class="headerlink" href="#pins" title="Permalink to this headline">¶</a></h2>
+<h2>10.1. pins<a class="headerlink" href="#pins" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
 <colgroup>
-<col width="50%" />
-<col width="50%" />
+<col width="26%" />
+<col width="35%" />
+<col width="26%" />
+<col width="12%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">FTDI pin</th>
+<tr class="row-odd"><th class="head">AVR pin</th>
+<th class="head">Arduino pin</th>
 <th class="head">signal</th>
+<th class="head">R</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>1</td>
-<td>gnd</td>
+<tr class="row-even"><td>PortB 0</td>
+<td>8</td>
+<td>video</td>
+<td>330</td>
 </tr>
-<tr class="row-odd"><td>2</td>
-<td>cts</td>
+<tr class="row-odd"><td>PortB 1</td>
+<td>9</td>
+<td>sync</td>
+<td>1k</td>
 </tr>
-<tr class="row-even"><td>3</td>
-<td>5v</td>
-</tr>
-<tr class="row-odd"><td>4</td>
-<td>rxd</td>
-</tr>
-<tr class="row-even"><td>5</td>
-<td>txd</td>
-</tr>
-<tr class="row-odd"><td>6</td>
-<td>rts</td>
+<tr class="row-even"><td>PortB 2</td>
+<td>10</td>
+<td>audio</td>
+<td>&nbsp;</td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="section" id="schematic">
-<h2>8.2. Schematic<a class="headerlink" href="#schematic" title="Permalink to this headline">¶</a></h2>
+<h2>10.2. Schematic<a class="headerlink" href="#schematic" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><img alt="../../_images/rs232_sch_40.png" src="../../_images/rs232_sch_40.png" />
+<div><img alt="../../_images/tvout_sch_56.png" src="../../_images/tvout_sch_56.png" />
 </div></blockquote>
 </div>
 <div class="section" id="board">
-<h2>8.3. Board<a class="headerlink" href="#board" title="Permalink to this headline">¶</a></h2>
+<h2>10.3. Board<a class="headerlink" href="#board" title="Permalink to this headline">¶</a></h2>
 <p>Normal, bottom mirrored, wires only:</p>
 <blockquote>
-<div><img alt="../../_images/rs232_brd_41.png" src="../../_images/rs232_brd_41.png" />
-<img alt="../../_images/rs232_brd_42.png" src="../../_images/rs232_brd_42.png" />
-<img alt="../../_images/rs232_brd_43.png" src="../../_images/rs232_brd_43.png" />
+<div><img alt="../../_images/tvout_brd_57.png" src="../../_images/tvout_brd_57.png" />
+<img alt="../../_images/tvout_brd_58.png" src="../../_images/tvout_brd_58.png" />
+<img alt="../../_images/tvout_brd_59.png" src="../../_images/tvout_brd_59.png" />
 </div></blockquote>
 </div>
 <div class="section" id="partlist">
-<h2>8.4. Partlist<a class="headerlink" href="#partlist" title="Permalink to this headline">¶</a></h2>
+<h2>10.4. Partlist<a class="headerlink" href="#partlist" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><table border="1" class="docutils">
 <caption></caption>
@@ -128,66 +123,62 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>C3</td>
-<td>100n</td>
-<td>(1.1 0.35)</td>
+<tr class="row-even"><td>D1</td>
+<td>1N4148DO35-7</td>
+<td>(1.25 1.2)</td>
 </tr>
-<tr class="row-odd"><td>PD</td>
+<tr class="row-odd"><td>D2</td>
+<td>1N4148DO35-7</td>
+<td>(1.25 1.1)</td>
+</tr>
+<tr class="row-even"><td>PD</td>
 <td>&nbsp;</td>
 <td>(0.7 0.75)</td>
 </tr>
-<tr class="row-even"><td>R3</td>
+<tr class="row-odd"><td>R1</td>
 <td>1k</td>
-<td>(2 0.95)</td>
+<td>(1.5 0.9)</td>
 </tr>
-<tr class="row-odd"><td>R4</td>
-<td>1k</td>
-<td>(1.8 0.85)</td>
+<tr class="row-even"><td>R2</td>
+<td>330</td>
+<td>(1.6 0.95)</td>
 </tr>
-<tr class="row-even"><td>SV1</td>
-<td>&nbsp;</td>
-<td>(2.5 0.75)</td>
+<tr class="row-odd"><td>X1</td>
+<td>AUDIO</td>
+<td>(2.6 1)</td>
 </tr>
-<tr class="row-odd"><td>SV2</td>
-<td>&nbsp;</td>
-<td>(0.9 0.85)</td>
-</tr>
-<tr class="row-even"><td>SV3</td>
-<td>&nbsp;</td>
-<td>(1.5 0.85)</td>
-</tr>
-<tr class="row-odd"><td>SV4</td>
-<td>&nbsp;</td>
-<td>(1.15 1.1)</td>
+<tr class="row-even"><td>X2</td>
+<td>VIDEO</td>
+<td>(2.6 0.5)</td>
 </tr>
 </tbody>
 </table>
 </div></blockquote>
 </div>
 <div class="section" id="d-view">
-<h2>8.5. 3D view<a class="headerlink" href="#d-view" title="Permalink to this headline">¶</a></h2>
+<h2>10.5. 3D view<a class="headerlink" href="#d-view" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="front">
-<h3>8.5.1. Front<a class="headerlink" href="#front" title="Permalink to this headline">¶</a></h3>
+<h3>10.5.1. Front<a class="headerlink" href="#front" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><img alt="../../_images/rs232_brd_3d_44.png" src="../../_images/rs232_brd_3d_44.png" />
+<div><img alt="../../_images/tvout_brd_3d_60.png" src="../../_images/tvout_brd_3d_60.png" />
 </div></blockquote>
 </div>
 <div class="section" id="right-side">
-<h3>8.5.2. Right side<a class="headerlink" href="#right-side" title="Permalink to this headline">¶</a></h3>
+<h3>10.5.2. Right side<a class="headerlink" href="#right-side" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><img alt="../../_images/rs232_brd_3d_45.png" src="../../_images/rs232_brd_3d_45.png" />
+<div><img alt="../../_images/tvout_brd_3d_61.png" src="../../_images/tvout_brd_3d_61.png" />
 </div></blockquote>
 </div>
 <div class="section" id="left-side">
-<h3>8.5.3. Left side<a class="headerlink" href="#left-side" title="Permalink to this headline">¶</a></h3>
+<h3>10.5.3. Left side<a class="headerlink" href="#left-side" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><img alt="../../_images/rs232_brd_3d_46.png" src="../../_images/rs232_brd_3d_46.png" />
+<div><img alt="../../_images/tvout_brd_3d_62.png" src="../../_images/tvout_brd_3d_62.png" />
 </div></blockquote>
 </div>
 <div class="section" id="bottom">
-<h3>8.5.4. Bottom<a class="headerlink" href="#bottom" title="Permalink to this headline">¶</a></h3>
+<h3>10.5.4. Bottom<a class="headerlink" href="#bottom" title="Permalink to this headline">¶</a></h3>
 <blockquote>
-<div><img alt="../../_images/rs232_brd_3d_47.png" src="../../_images/rs232_brd_3d_47.png" />
+<div><img alt="../../_images/tvout_brd_3d_63.png" src="../../_images/tvout_brd_3d_63.png" />
 </div></blockquote>
 </div>
 </div>
@@ -201,16 +192,16 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">8. RS232 adapter</a><ul>
-<li><a class="reference internal" href="#pins">8.1. pins</a></li>
-<li><a class="reference internal" href="#schematic">8.2. Schematic</a></li>
-<li><a class="reference internal" href="#board">8.3. Board</a></li>
-<li><a class="reference internal" href="#partlist">8.4. Partlist</a></li>
-<li><a class="reference internal" href="#d-view">8.5. 3D view</a><ul>
-<li><a class="reference internal" href="#front">8.5.1. Front</a></li>
-<li><a class="reference internal" href="#right-side">8.5.2. Right side</a></li>
-<li><a class="reference internal" href="#left-side">8.5.3. Left side</a></li>
-<li><a class="reference internal" href="#bottom">8.5.4. Bottom</a></li>
+<li><a class="reference internal" href="#">10. Arduino tvout adapter</a><ul>
+<li><a class="reference internal" href="#pins">10.1. pins</a></li>
+<li><a class="reference internal" href="#schematic">10.2. Schematic</a></li>
+<li><a class="reference internal" href="#board">10.3. Board</a></li>
+<li><a class="reference internal" href="#partlist">10.4. Partlist</a></li>
+<li><a class="reference internal" href="#d-view">10.5. 3D view</a><ul>
+<li><a class="reference internal" href="#front">10.5.1. Front</a></li>
+<li><a class="reference internal" href="#right-side">10.5.2. Right side</a></li>
+<li><a class="reference internal" href="#left-side">10.5.3. Left side</a></li>
+<li><a class="reference internal" href="#bottom">10.5.4. Bottom</a></li>
 </ul>
 </li>
 </ul>
@@ -218,14 +209,14 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../r2r_ladder_dac/r2r_ladder_dac.html"
-                        title="previous chapter">7. r2r_ladder_dac</a></p>
-  <h4>Next topic</h4>
   <p class="topless"><a href="../tester/tester.html"
-                        title="next chapter">9. Electronic component tester</a></p>
+                        title="previous chapter">9. Electronic component tester</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../vusb/vusb.html"
+                        title="next chapter">11. V-USB Adapter</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="../../_sources/projects/rs232/rs232.txt"
+    <li><a href="../../_sources/projects/tvout/tvout.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -252,10 +243,10 @@
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="../tester/tester.html" title="9. Electronic component tester"
+          <a href="../vusb/vusb.html" title="11. V-USB Adapter"
              >next</a> |</li>
         <li class="right" >
-          <a href="../r2r_ladder_dac/r2r_ladder_dac.html" title="7. r2r_ladder_dac"
+          <a href="../tester/tester.html" title="9. Electronic component tester"
              >previous</a> |</li>
         <li><a href="../../index.html">StripboardProto 0.0.0 documentation</a> &raquo;</li> 
       </ul>
