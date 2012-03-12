@@ -1,6 +1,6 @@
-from path import path
-from setuptools import find_packages
-import logging
+#from path import path
+#from setuptools import find_packages
+#import logging
 
 release = '0.0.0'
 project = u'StripboardProto'
@@ -17,7 +17,7 @@ extensions = [
               'sphinxcontrib.eagle',
              #'sphinx.ext.autodoc',
              #'sphinxcontrib.programoutput',
-             #'sphinx.ext.graphviz',
+             'sphinx.ext.graphviz',
              #'sphinx.ext.autosummary',
               ]
 #intersphinx_mapping = {'http://docs.python.org/': None,
@@ -53,3 +53,8 @@ latex_documents = [
 # remove blank pages from pdf
 # http://groups.google.com/group/sphinx-dev/browse_thread/thread/92e19267d095412d/d60dcba483c6b13d
 latex_font_size = '10pt,oneside' 
+
+latex_elements=dict(
+                    papersize='a4paper',
+                    )
+ 
