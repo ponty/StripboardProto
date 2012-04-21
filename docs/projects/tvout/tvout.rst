@@ -32,23 +32,32 @@ Schematic
       .. eagle-image:: tvout.sch
                 :resolution: 150
 
+.. raw:: latex
+
+  \newpage % hard pagebreak at exactly this position 
+
 Board
 ----------
 
-Normal, bottom mirrored, wires only:
+top view:
 
       .. eagle-image:: tvout.brd
                 :command:   display all
                 :resolution: 300
 
-      .. eagle-image:: tvout.brd
-                :resolution: 300
-                :layers: pads,vias, bottom, dimension
-                :mirror:
+wires only:
 
       .. eagle-image:: tvout.brd
                 :resolution: 300
-                :layers: document, pads,vias, top, dimension
+                :layers: document, pads, vias, top, dimension
+
+bottom view mirrored:
+
+      .. eagle-image:: tvout.brd
+                :resolution: 300
+                :layers: pads, vias, bottom, dimension
+                :mirror:
+
 
 Partlist
 ----------

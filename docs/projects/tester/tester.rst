@@ -15,23 +15,32 @@ Schematic
       .. eagle-image:: tester.sch
                 :resolution: 150
 
+.. raw:: latex
+
+  \newpage % hard pagebreak at exactly this position 
+
 Board
 ----------
 
-Normal, bottom mirrored, wires only:
+top view:
 
       .. eagle-image:: tester.brd
                 :command:   display all
                 :resolution: 300
 
-      .. eagle-image:: tester.brd
-                :resolution: 300
-                :layers: pads,vias, bottom, dimension
-                :mirror:
+wires only:
 
       .. eagle-image:: tester.brd
                 :resolution: 300
-                :layers: document, pads,vias, top, dimension
+                :layers: document, pads, vias, top, dimension
+
+bottom view mirrored:
+
+      .. eagle-image:: tester.brd
+                :resolution: 300
+                :layers: pads, vias, bottom, dimension
+                :mirror:
+
 
 Partlist
 ----------
