@@ -21,23 +21,32 @@ Schematic
       .. eagle-image:: backplane.sch
                 :resolution: 150
 
+.. raw:: latex
+
+  \newpage % hard pagebreak at exactly this position 
+
 Board
 ----------
 
-Normal, bottom mirrored, wires only:
+top view:
 
       .. eagle-image:: backplane.brd
                 :command:   display all
                 :resolution: 300
 
-      .. eagle-image:: backplane.brd
-                :resolution: 300
-                :layers: pads,vias, bottom, dimension
-                :mirror:
+wires only:
 
       .. eagle-image:: backplane.brd
                 :resolution: 300
-                :layers: document, pads,vias, top, dimension
+                :layers: document, pads, vias, top, dimension
+
+bottom view mirrored:
+
+      .. eagle-image:: backplane.brd
+                :resolution: 300
+                :layers: pads, vias, bottom, dimension
+                :mirror:
+
 
 Partlist
 ----------
