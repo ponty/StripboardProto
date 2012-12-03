@@ -1,0 +1,170 @@
+# EESchema Netlist Version 1.1 created  Thu 03 Mar 2011 10:22:40 PM CET
+(
+ ( /4D13869E DIP-20__300 BAR1 DOT-BAR2
+  ( 1 N-000001 )
+  ( 2 N-000002 )
+  ( 3 N-000003 )
+  ( 4 N-000004 )
+  ( 5 N-000016 )
+  ( 6 N-000017 )
+  ( 7 N-000018 )
+  ( 8 N-000019 )
+  ( 9 ? )
+  ( 10 N-000021 )
+  ( 11 GND )
+  ( 12 GND )
+  ( 13 GND )
+  ( 14 GND )
+  ( 15 GND )
+  ( 16 GND )
+  ( 17 GND )
+  ( 18 GND )
+  ( 19 GND )
+  ( 20 GND )
+ )
+ ( /4D121312 C1V5 C1 200u
+  ( 1 +5V )
+  ( 2 GND )
+ )
+ ( /4D1212DF C1 C2 100n
+  ( 1 +5V )
+  ( 2 GND )
+ )
+ ( /4D135F76 SIL-12 P1 A_UP
+  ( 1 /RA2 )
+  ( 2 /RA3 )
+  ( 3 /RA4 )
+  ( 4 /RA5 )
+  ( 5 /RB3 )
+  ( 6 /RB0 )
+  ( 7 /RB1 )
+  ( 8 /RB2 )
+  ( 9 +5V )
+  ( 10 GND )
+  ( 11 ? )
+  ( 12 ? )
+ )
+ ( /4D138704 C2 R1 470
+  ( 1 N-000001 )
+  ( 2 /RA1 )
+ )
+ ( /4D138731 C2 R2 470
+  ( 1 N-000002 )
+  ( 2 /RA0 )
+ )
+ ( /4D138747 C2 R3 470
+  ( 1 N-000003 )
+  ( 2 /RA7 )
+ )
+ ( /4D138746 C2 R4 470
+  ( 1 N-000004 )
+  ( 2 /RA6 )
+ )
+ ( /4D13874B C2 R5 470
+  ( 1 N-000016 )
+  ( 2 /RB4 )
+ )
+ ( /4D13874C C2 R6 470
+  ( 1 N-000017 )
+  ( 2 /RB7 )
+ )
+ ( /4D138758 C2 R7 470
+  ( 1 N-000018 )
+  ( 2 /RB6 )
+ )
+ ( /4D138757 C2 R8 470
+  ( 1 N-000019 )
+  ( 2 /RB5 )
+ )
+ ( /4D138756 C2 R10 470
+  ( 1 N-000021 )
+  ( 2 +5V )
+ )
+ ( /4D700304 DIP-18__300 U1 PIC16F628A
+  ( 1 /RA2 )
+  ( 2 /RA3 )
+  ( 3 /RA4 )
+  ( 4 /RA5 )
+  ( 5 GND )
+  ( 6 /RB0 )
+  ( 7 /RB1 )
+  ( 8 /RB2 )
+  ( 9 /RB3 )
+  ( 10 /RB4 )
+  ( 11 /RB5 )
+  ( 12 /RB6 )
+  ( 13 /RB7 )
+  ( 14 +5V )
+  ( 15 /RA6 )
+  ( 16 /RA7 )
+  ( 17 /RA0 )
+  ( 18 /RA1 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ CP*
+ SM*
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+ R?-*
+$endlist
+$endfootprintlist
+}
