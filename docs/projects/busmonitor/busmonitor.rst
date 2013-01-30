@@ -10,10 +10,10 @@ Schematic
 ----------
 
 
-  .. image:: kicad/portmonitor-sch.png
+  .. image:: kicad/busmonitor-sch.png
 
   
 Board
 -------
 
-  .. image:: kicad/portmonitor-brd.png
+  .. image:: kicad/busmonitor-brd.png
