@@ -12265,6 +12265,16 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="223.52" y1="137.16" x2="210.82" y2="137.16" width="0.1524" layer="91"/>
 <label x="213.36" y="137.16" size="1.778" layer="95"/>
 <pinref part="PC" gate="1" pin="6"/>
+<wire x1="259.08" y1="111.76" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
+<label x="254" y="111.76" size="1.778" layer="95"/>
+<wire x1="241.3" y1="99.06" x2="246.38" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="99.06" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="111.76" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
+<junction x="246.38" y="99.06"/>
+<pinref part="IC2" gate="B" pin="OUT"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="IC2" gate="A" pin="+IN"/>
+<junction x="246.38" y="111.76"/>
 </segment>
 </net>
 <net name="A5" class="0">
@@ -12395,17 +12405,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <pinref part="IC2" gate="B" pin="-IN"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="241.3" y1="99.06" x2="246.38" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="99.06" x2="246.38" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="246.38" y1="111.76" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
-<junction x="246.38" y="99.06"/>
-<pinref part="IC2" gate="B" pin="OUT"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="IC2" gate="A" pin="+IN"/>
 </segment>
 </net>
 <net name="N$5" class="0">

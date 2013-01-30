@@ -80,14 +80,13 @@
 <text x="38.1" y="10.16" size="3.81" layer="110">ESR METER</text>
 <text x="33.02" y="45.72" size="2.54" layer="110">Capacitor</text>
 <text x="35.56" y="5.08" size="1.778" layer="110">D9</text>
-<text x="71.12" y="5.08" size="1.778" layer="110">A5</text>
+<text x="74.93" y="5.08" size="1.778" layer="110">A5</text>
 <hole x="58.42" y="20.32" drill="1.5"/>
 <hole x="76.2" y="22.86" drill="1.5"/>
 <hole x="73.66" y="22.86" drill="1.5"/>
 <hole x="78.74" y="25.4" drill="1.5"/>
 <hole x="81.28" y="25.4" drill="1.5"/>
 <hole x="81.28" y="7.62" drill="1.5"/>
-<hole x="78.74" y="17.78" drill="1.5"/>
 <hole x="50.8" y="40.64" drill="1.5"/>
 <hole x="53.34" y="40.64" drill="1.5"/>
 <hole x="60.96" y="40.64" drill="1.5"/>
@@ -97,6 +96,7 @@
 <hole x="63.5" y="40.64" drill="1.5"/>
 <hole x="48.26" y="40.64" drill="1.5"/>
 <hole x="66.04" y="40.64" drill="1.5"/>
+<text x="72.39" y="11.43" size="1.778" layer="110">A4</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -725,7 +725,9 @@ design rules under a new name.</description>
 <wire x1="55.88" y1="7.62" x2="55.88" y2="22.86" width="0.4064" layer="16"/>
 <wire x1="55.88" y1="22.86" x2="55.88" y2="25.4" width="0.4064" layer="16"/>
 <wire x1="55.88" y1="25.4" x2="55.88" y2="38.1" width="0.4064" layer="16"/>
-<wire x1="55.88" y1="7.62" x2="86.36" y2="7.62" width="0.4064" layer="1"/>
+<wire x1="55.88" y1="7.62" x2="57.15" y2="8.89" width="0.4064" layer="1"/>
+<wire x1="57.15" y1="8.89" x2="85.09" y2="8.89" width="0.4064" layer="1"/>
+<wire x1="85.09" y1="8.89" x2="86.36" y2="7.62" width="0.4064" layer="1"/>
 <wire x1="55.88" y1="38.1" x2="55.88" y2="43.18" width="0.4064" layer="16"/>
 <wire x1="55.88" y1="43.18" x2="55.88" y2="45.72" width="0.4064" layer="16"/>
 <wire x1="53.34" y1="43.18" x2="53.34" y2="45.72" width="0.4064" layer="16"/>
@@ -761,6 +763,20 @@ design rules under a new name.</description>
 </signal>
 <signal name="A4">
 <contactref element="PC" pad="6"/>
+<contactref element="IC2" pad="7"/>
+<contactref element="R1" pad="2"/>
+<contactref element="IC2" pad="3"/>
+<wire x1="76.2" y1="27.94" x2="76.2" y2="33.02" width="0.4064" layer="16"/>
+<wire x1="78.74" y1="20.32" x2="78.74" y2="22.86" width="0.4064" layer="16"/>
+<wire x1="76.2" y1="25.4" x2="76.2" y2="27.94" width="0.4064" layer="16"/>
+<wire x1="78.74" y1="22.86" x2="76.2" y2="25.4" width="0.4064" layer="1"/>
+<via x="78.74" y="22.86" extent="1-16" drill="0.6" shape="square"/>
+<via x="76.2" y="25.4" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="73.66" y1="2.54" x2="73.66" y2="7.62" width="0.4064" layer="16"/>
+<wire x1="78.74" y1="20.32" x2="78.74" y2="7.62" width="0.4064" layer="16"/>
+<via x="73.66" y="7.62" extent="1-16" drill="0.6" shape="square"/>
+<via x="78.74" y="7.62" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="73.66" y1="7.62" x2="78.74" y2="7.62" width="0.4064" layer="1"/>
 </signal>
 <signal name="A5">
 <contactref element="PC" pad="5"/>
@@ -828,17 +844,6 @@ design rules under a new name.</description>
 <contactref element="R1" pad="1"/>
 <wire x1="78.74" y1="27.94" x2="78.74" y2="33.02" width="0.4064" layer="16"/>
 <wire x1="78.74" y1="33.02" x2="78.74" y2="38.1" width="0.4064" layer="16"/>
-</signal>
-<signal name="N$4">
-<contactref element="IC2" pad="7"/>
-<contactref element="R1" pad="2"/>
-<contactref element="IC2" pad="3"/>
-<wire x1="76.2" y1="27.94" x2="76.2" y2="33.02" width="0.4064" layer="16"/>
-<wire x1="78.74" y1="20.32" x2="78.74" y2="22.86" width="0.4064" layer="16"/>
-<wire x1="76.2" y1="25.4" x2="76.2" y2="27.94" width="0.4064" layer="16"/>
-<wire x1="78.74" y1="22.86" x2="76.2" y2="25.4" width="0.4064" layer="1"/>
-<via x="78.74" y="22.86" extent="1-16" drill="0.6" shape="square"/>
-<via x="76.2" y="25.4" extent="1-16" drill="0.6" shape="square"/>
 </signal>
 <signal name="N$5">
 <contactref element="IC2" pad="1"/>
