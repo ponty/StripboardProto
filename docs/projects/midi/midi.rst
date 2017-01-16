@@ -2,7 +2,7 @@
 MIDI adapter
 ============
 
-Status: ?
+Status: OK
 
 Arduino MIDI_ library interface
 
@@ -29,7 +29,7 @@ MIDI spec: http://www.midi.org/techspecs/electrispec.php
 ..  ]]]
 
 Schematic
-----------
+---------
 
       .. eagle-image:: midi.sch
                 :resolution: 150
@@ -39,7 +39,7 @@ Schematic
   \newpage % hard pagebreak at exactly this position 
 
 Board
-----------
+-----
 
 top view:
 
@@ -62,37 +62,37 @@ bottom view mirrored:
 
 
 Partlist
-----------
+--------
 
       .. eagle-partlist:: midi.brd
             :header: part, value , position
 
 3D view
-----------
+-------
 
-------------
+-----
 Front
-------------
+-----
 
       .. eagle-image3d:: midi.brd
 
-------------
+----------
 Right side
-------------
+----------
 
       .. eagle-image3d:: midi.brd
             :pcbrotate:  90,45,90
 
-------------
+---------
 Left side
-------------
+---------
 
       .. eagle-image3d:: midi.brd
             :pcbrotate:  90,-45,-90
 
-------------
+------
 Bottom
-------------
+------
 
       .. eagle-image3d:: midi.brd
             :pcbrotate:  0,0,180
