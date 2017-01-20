@@ -1,0 +1,9 @@
+pillow
+paver
+path.py
+cogapp==2.3
+sphinx
+eagexp
+sphinxcontrib-eagle
+requests>=2.12
+

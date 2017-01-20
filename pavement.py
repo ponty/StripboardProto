@@ -1,57 +1,21 @@
-from easyprocess import Proc
-from paver.easy import *
+#from easyprocess import Proc
+#from paver.easy import setup
+from paver.easy import options
+#from paver.options import Bunch
+from paver.setuputils import setup
 
-import paver.doctools
-import paver.virtual
-import paver.misctasks
-from paved import *
-from paved.dist import *
-from paved.util import *
-from paved.docs import *
-from paved.pycheck import *
-from paved.pkg import *
+from paver.doctools import cog, html
+#import paver.doctools
+#import paver.virtual
+#import paver.misctasks
+
+IMPORTS=[cog, html]
 
 options(
-    sphinx=Bunch(
-        docroot='docs',
-        builddir="_build",
-    ),
-#    pdf=Bunch(
-#        builddir='_build',
-#        builder='latex',
-#    ),
 )
 
-
-options.paved.clean.rmdirs += ['.tox',
-                               'dist',
-                               'build',
-                               ]
-options.paved.clean.patterns += ['*.pickle',
-                                 '*.doctree',
-                                 '*.gz',
-                                 'nosetests.xml',
-                                 'sloccount.sc',
-                                 '*.pdf', '*.tex',
-                                 '*_sch_*.png',
-                                 '*_brd_*.png',
-                                 '*.b#*', '*.s#*', '*.pro',  # eagle
-                                 '*.hex',
-                                 '*.zip',
-                                 'distribute_setup.py',
-                                 ]
-
-options.paved.dist.manifest.include.remove('distribute_setup.py')
-options.paved.dist.manifest.include.remove('paver-minilib.zip')
-
-
-@task
-@needs(
-    #           'clean',
-    'cog',
-    'html',
-    'pdf',
+setup(
+    name="dummy",
+    packages=['.'],
+    version="1.0",
 )
-def alltest():
-    'all tasks to check'
-    pass
