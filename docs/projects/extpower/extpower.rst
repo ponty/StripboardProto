@@ -10,7 +10,7 @@ Status: under construction
 ..  ]]]
 
 Schematic
-----------
+---------
 
       .. eagle-image:: extpower.sch
                 :resolution: 150
@@ -20,7 +20,7 @@ Schematic
   \newpage % hard pagebreak at exactly this position 
 
 Board
-----------
+-----
 
 top view:
 
@@ -43,37 +43,37 @@ bottom view mirrored:
 
 
 Partlist
-----------
+--------
 
       .. eagle-partlist:: extpower.brd
             :header: part, value , position
 
 3D view
-----------
+-------
 
-------------
+-----
 Front
-------------
+-----
 
       .. eagle-image3d:: extpower.brd
 
-------------
+----------
 Right side
-------------
+----------
 
       .. eagle-image3d:: extpower.brd
             :pcbrotate:  90,45,90
 
-------------
+---------
 Left side
-------------
+---------
 
       .. eagle-image3d:: extpower.brd
             :pcbrotate:  90,-45,-90
 
-------------
+------
 Bottom
-------------
+------
 
       .. eagle-image3d:: extpower.brd
             :pcbrotate:  0,0,180

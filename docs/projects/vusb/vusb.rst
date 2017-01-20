@@ -15,7 +15,7 @@ TODO:
 ..  ]]]
 
 Schematic
-----------
+---------
 
       .. eagle-image:: vusb.sch
                 :resolution: 150
@@ -25,7 +25,7 @@ Schematic
   \newpage % hard pagebreak at exactly this position 
 
 Board
-----------
+-----
 
 top view:
 
@@ -48,37 +48,37 @@ bottom view mirrored:
 
 
 Partlist
-----------
+--------
 
       .. eagle-partlist:: vusb.brd
             :header: part, value , position
 
 3D view
-----------
+-------
 
-------------
+-----
 Front
-------------
+-----
 
       .. eagle-image3d:: vusb.brd
 
-------------
+----------
 Right side
-------------
+----------
 
       .. eagle-image3d:: vusb.brd
             :pcbrotate:  90,45,90
 
-------------
+---------
 Left side
-------------
+---------
 
       .. eagle-image3d:: vusb.brd
             :pcbrotate:  90,-45,-90
 
-------------
+------
 Bottom
-------------
+------
 
       .. eagle-image3d:: vusb.brd
             :pcbrotate:  0,0,180
