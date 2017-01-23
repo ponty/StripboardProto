@@ -32,7 +32,12 @@ nosetests.xml
 sloccount.sc
 *.prefs
 
+# eagle
 *.s#*
 *.b#*
+*.job
+*.pro
+
+
 *.o
 *.hex
