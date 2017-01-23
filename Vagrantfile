@@ -84,9 +84,10 @@ Vagrant.configure(2) do |config|
   sudo apt-get install -y libjpeg-dev zlib1g-dev
 
 # project dependencies
-  sudo apt-get install -y scrot eagle povray  python-pil xdotool xserver-xephyr
+  sudo apt-get install -y scrot eagle povray  python-pil xdotool xserver-xephyr rst2pdf
 #  sudo pip install -r /vagrant/requirements.txt
-
+  sudo apt-get install -y texlive-latex-extra texlive-fonts-recommended 
+  
 # test dependencies
 #  sudo pip install -r /vagrant/requirements-test.txt
   
