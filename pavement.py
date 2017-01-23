@@ -1,15 +1,16 @@
-#from easyprocess import Proc
-#from paver.easy import setup
-from paver.easy import options
-#from paver.options import Bunch
-from paver.setuputils import setup
-
+# from easyprocess import Proc
+# from paver.easy import setup
 from paver.doctools import cog, html
-#import paver.doctools
-#import paver.virtual
-#import paver.misctasks
+from paver.easy import options, task
+from paver.setuputils import setup
+from paver.shell import sh
 
-IMPORTS=[cog, html]
+
+# from paver.options import Bunch
+# import paver.doctools
+# import paver.virtual
+# import paver.misctasks
+IMPORTS = [cog, html]
 
 options(
 )
@@ -19,3 +20,9 @@ setup(
     packages=['.'],
     version="1.0",
 )
+
+@task
+def pdf():
+    pdfdir='docs/.build/pdf'
+    sh('sphinx-build -b latex docs %s -v' % pdfdir)
+    sh('pdflatex *.tex', cwd=pdfdir)
