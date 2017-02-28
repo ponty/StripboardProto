@@ -41,3 +41,5 @@ sloccount.sc
 
 *.o
 *.hex
+
+*.pdf
