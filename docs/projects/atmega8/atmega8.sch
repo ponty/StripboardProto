@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13213,18 +13213,31 @@ Source: 008-0260-0_E.pdf</description>
 <pinref part="IC2" gate="G$1" pin="PC3(ADC3)"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="A4" class="0">
 <segment>
 <wire x1="177.8" y1="119.38" x2="96.52" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="PC" gate="1" pin="6"/>
 <pinref part="IC2" gate="G$1" pin="PC4(ADC4/SDA)"/>
+<label x="137.16" y="119.38" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="PB" gate="1" pin="4"/>
+<label x="101.6" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="A5" class="0">
 <segment>
 <wire x1="177.8" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="PC" gate="1" pin="5"/>
 <pinref part="IC2" gate="G$1" pin="PC5(ADC5/SCL)"/>
+<label x="137.16" y="116.84" size="1.778" layer="95"/>
+<wire x1="177.8" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="114.3" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="PB" gate="1" pin="3"/>
+<label x="101.6" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RXD" class="0">

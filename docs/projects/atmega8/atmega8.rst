@@ -1,6 +1,6 @@
-=========
+=======
 Atmega8
-=========
+=======
 
 Status: OK
 
@@ -11,7 +11,10 @@ features:
  - 10 pin ISP connector
 
 Pins
------
+----
+
+6,7 is connected with 14,15 to make I2C compatible with Nucleo.
+Nucleo has I2C on D14,D15.
 
 ========= ========= =========== ===========
 board pin  AVR pin  Arduino pin comment
@@ -22,8 +25,8 @@ board pin  AVR pin  Arduino pin comment
 3         PB3       D11         MOSI
 4         PB4       D12         MISO
 5         PB5       D13         SCK
-6         NC
-7         NC
+6         PC4       A4          I2C:SDA
+7         PC5       A5          I2C:SCL
 8         POWER
 9         GND
 *
@@ -32,8 +35,8 @@ board pin  AVR pin  Arduino pin comment
 11        PC1       A1
 12        PC2       A2
 13        PC3       A3
-14        PC4       A4
-15        PC5       A5
+14        PC4       A4         I2C:SDA
+15        PC5       A5         I2C:SCL
 16        NC
 17        NC
 18        POWER
