@@ -4,11 +4,14 @@ Bluepill
 
 Status: ?
 
-Arduino compatible board for Atmega8/48/88/168 and maybe others also.
+STM32F103C8T6 board carrier.
+
+https://developer.mbed.org/users/hudakz/code/STM32F103C8T6_Hello/
 
 features:
  - reset button
- - 10 pin ISP connector
+ - SWD connector
+
 
 Pins
 ----
