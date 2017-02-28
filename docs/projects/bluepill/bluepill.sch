@@ -1028,12 +1028,12 @@ W = angled&lt;p&gt;
 <instance part="GND5" gate="1" x="157.48" y="190.5" rot="R90"/>
 <instance part="SV3" gate="G$1" x="114.3" y="170.18" rot="MR0"/>
 <instance part="SV4" gate="G$1" x="139.7" y="170.18"/>
-<instance part="SV5" gate="1" x="124.46" y="210.82" rot="R90"/>
+<instance part="SV5" gate="1" x="124.46" y="213.36" rot="R90"/>
 <instance part="S1" gate="1" x="190.5" y="154.94"/>
 <instance part="GND7" gate="1" x="190.5" y="144.78"/>
 <instance part="SV6" gate="1" x="124.46" y="200.66" rot="R90"/>
 <instance part="GND3" gate="1" x="111.76" y="60.96" rot="R270"/>
-<instance part="GND1" gate="1" x="121.92" y="226.06" rot="R180"/>
+<instance part="GND1" gate="1" x="124.46" y="231.14" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -1124,9 +1124,9 @@ W = angled&lt;p&gt;
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SV5" gate="1" pin="4"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="121.92" y1="223.52" x2="121.92" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="SV5" gate="1" pin="3"/>
+<wire x1="124.46" y1="228.6" x2="124.46" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -1438,8 +1438,8 @@ W = angled&lt;p&gt;
 </segment>
 <segment>
 <pinref part="SV5" gate="1" pin="1"/>
-<wire x1="129.54" y1="218.44" x2="129.54" y2="226.06" width="0.1524" layer="91"/>
-<label x="129.54" y="226.06" size="1.778" layer="95"/>
+<wire x1="129.54" y1="220.98" x2="129.54" y2="231.14" width="0.1524" layer="91"/>
+<label x="129.54" y="231.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -1550,17 +1550,23 @@ W = angled&lt;p&gt;
 <net name="DIO" class="0">
 <segment>
 <pinref part="SV5" gate="1" pin="2"/>
-<wire x1="127" y1="218.44" x2="127" y2="208.28" width="0.1524" layer="91"/>
-<label x="127" y="223.52" size="1.778" layer="95" rot="R270"/>
+<wire x1="127" y1="220.98" x2="127" y2="208.28" width="0.1524" layer="91"/>
+<label x="127" y="228.6" size="1.778" layer="95" rot="R270"/>
 <pinref part="SV6" gate="1" pin="2"/>
+<wire x1="127" y1="220.98" x2="127" y2="228.6" width="0.1524" layer="91"/>
+<junction x="127" y="220.98"/>
 </segment>
 </net>
 <net name="DCLK" class="0">
 <segment>
-<pinref part="SV5" gate="1" pin="3"/>
-<wire x1="124.46" y1="218.44" x2="124.46" y2="208.28" width="0.1524" layer="91"/>
-<label x="124.46" y="223.52" size="1.778" layer="95" rot="R270"/>
 <pinref part="SV6" gate="1" pin="3"/>
+<wire x1="124.46" y1="208.28" x2="124.46" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="210.82" x2="121.92" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="210.82" x2="121.92" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="SV5" gate="1" pin="4"/>
+<wire x1="121.92" y1="220.98" x2="121.92" y2="228.6" width="0.1524" layer="91"/>
+<label x="121.92" y="223.52" size="1.778" layer="95" rot="R90"/>
+<junction x="121.92" y="220.98"/>
 </segment>
 </net>
 </nets>
